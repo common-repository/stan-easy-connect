@@ -1,0 +1,83 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#stan-easy-connect.stan-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0;
+}
+
+#stan-easy-connect.stan-button a {
+	font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size: 16px;
+	background-color: black;
+	color: #FFF;
+	font-weight: 600;
+	border-radius: 3px;
+	height: 30px;
+	max-height: 30px;
+	min-height: 30px;
+	line-height: 0;
+	padding: 10px 15px;
+	box-sizing: content-box;
+}
+#stan-easy-connect.stan-button a:hover {
+	background-color: #01052E;
+	color: #FFF;
+}
+
+#stan-easy-connect.stan-button a svg {
+	vertical-align: top;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+#stan-easy-connect .stan-easy-connect--tooltip {
+	position: relative;
+	display: flex;
+	padding-top: 6px;
+}
+
+#stan-easy-connect .stan-easy-connect--tooltip .stan-easy-connect--tooltiptext {
+	visibility: hidden;
+	width: 150px;
+	background-color: #01052E;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -70px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 10pt;
+}
+
+#stan-easy-connect .stan-easy-connect--tooltip .stan-easy-connect--tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #01052E transparent transparent transparent;
+}
+
+#stan-easy-connect .stan-easy-connect--tooltip:hover .stan-easy-connect--tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+#stan-easy-connect .stan-easy-connect--button {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}

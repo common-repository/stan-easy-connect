@@ -1,0 +1,54 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.logs-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.logs-container .link {
+	display: inline-block;
+	line-height: 50px;
+}
+
+#logger-table {
+	display: none;
+}
+
+.stan-connect-settings-header {
+	background-color: #ebedff;
+	margin-left: -20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.stan-connect-settings-header .description {
+	color: #2d2d2d;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.stan-logo {
+	max-height: 95px;
+	width: 200px;
+	margin: 20px 0;
+	object-fit: cover;
+}
+
+.stan-connect-settings {
+	display: block;
+	background-color: white;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.stan-connect-settings input[type=submit] {
+	width: 100%;
+}
+
+.stan-connect-settings input[type=checkbox] {
+	width: inherit;
+}
